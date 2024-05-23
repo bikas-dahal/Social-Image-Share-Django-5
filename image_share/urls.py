@@ -29,6 +29,7 @@ urlpatterns = [
         include('social_django.urls', namespace='social')
     ),
     path('images/', include('images.urls', namespace='images')),
+    path('__debug__/', include('debug_toolbar.urls')),
 ]
 
 if settings.DEBUG:
